@@ -24,7 +24,7 @@
     </encoder>
   </appender>
 
-  <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+  <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
     <layout class="ch.qos.logback.classic.PatternLayout">
       <Pattern>
         %d{HH:mm:ss.SSS} %-5level [%thread][%logger{0}] %m%n
@@ -41,11 +41,11 @@
   </root>
 
   <logger name="petpj.appchat" level="debug" additivity="false">
-    <appender-ref ref="STDOUT"/>
+    <appender-ref ref="CONSOLE"/>
   </logger>
 
   <root level="error">
-    <appender-ref ref="STDOUT"/>
+    <appender-ref ref="CONSOLE"/>
   </root>
 
 </configuration>
