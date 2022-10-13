@@ -1,0 +1,21 @@
+server:
+  port:
+
+spring:
+  profiles:
+    active: dev
+
+---
+
+spring:
+  profiles: dev
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username:
+    url:
+    password:
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: 'true'
+
